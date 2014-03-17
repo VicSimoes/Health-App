@@ -39,7 +39,7 @@ class MedicinesController < ApplicationController
   def destroy
     @medicine = Medicine.find(params[:id])
     @medicine.destroy
-    redirect_to new_medicine_path
+    redirect_to medicines_path
   end
 
 private
